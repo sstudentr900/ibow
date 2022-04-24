@@ -1,0 +1,251 @@
+/*#content*/
+
+.row_margin {
+    padding-top: 6vw;
+    padding-bottom: 10vw;
+}
+
+
+/*標題*/
+
+.bg_01 {
+    background: url("https://i.imgur.com/QPGZvDx.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bg_02 {
+    background: url("https://i.imgur.com/wSCYOaG.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title_lg_02 {
+    margin-bottom: 4vw;
+    text-align: center;
+    font-weight: bold;
+    color: #325b71;
+    font-size: 42px;
+}
+
+.title_lg_02 p {
+    font-size: 16px;
+    font-weight: 200;
+    color: #325b71;
+}
+
+.bg_01 .title_lg_02,
+.bg_01 .title_lg_02 p,
+.bg_01 h4,
+.bg_01 p {
+    color: #fff;
+}
+
+
+/*nav*/
+
+#nav {
+    position: absolute;
+    z-index: 999;
+    right: 0;
+}
+
+#nav a {
+    margin-top: 10px;
+    margin-right: 15px;
+    display: block;
+    color: #3090d2;
+    font-weight: 600;
+}
+
+
+/*#header*/
+
+#header {
+    background: url("https://i.imgur.com/Pw3zk96.jpg") top;
+    height: 80vh;
+    overflow: hidden;
+    perspective: 4000px;
+    padding: 0 15px;
+}
+
+#header #header_bg {
+    position: relative;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+#header img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding: 0 15px;
+    -webkit-transform: translateZ(50px);
+    -ms-transform: translateZ(50px);
+    transform: translateZ(50px);
+    z-index: 1;
+}
+
+#header img:nth-child(2) {
+    -webkit-transform: translateZ(200px);
+    -ms-transform: translateZ(200px);
+    transform: translateZ(200px);
+    z-index: 2;
+}
+
+#header img:nth-child(3) {
+    -webkit-transform: translateZ(280px);
+    -ms-transform: translateZ(280px);
+    transform: translateZ(280px);
+    z-index: 3;
+}
+
+
+/*#content*/
+
+.iBow a {
+    display: inline-block;
+    margin-top: 1vw;
+    margin-right: 20px;
+}
+
+.iBow .row_margin div:first-child img {
+    width: 270px;
+}
+
+.Characteristic img {
+    width: 8vw;
+    margin-bottom: 25px;
+    transition: .3s;
+}
+
+.Characteristic p {
+    padding: 0 20px;
+    margin-bottom: 4vw;
+}
+
+.Record img {
+    width: 80%;
+    transition: .3s;
+}
+
+.Record img:hover,
+.Characteristic .col-sm-4:hover img {
+    transform: translateY(-15px);
+}
+
+.grade .text {
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+
+.grade h3 {
+    margin-top: 0;
+}
+
+#contact p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#contact .row_margin {
+    padding-bottom: 3vw;
+}
+
+
+/*footer*/
+
+#footer {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background: #3090d2;
+}
+
+#footer p,
+#footer a {
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#footer .footer-socials {
+    float: right;
+}
+
+@media (max-width: 1210px) {
+    .grade .text {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    #header {
+        height: 80vw;
+        background-position: bottom;
+        background-size: cover;
+    }
+    .row_margin {
+        padding-top: 10vw;
+        padding-bottom: 12vw;
+    }
+    .iBow a {
+        width: 40%;
+    }
+    .grade.hightsame {
+        display: block;
+    }
+    .grade.hightsame .col-md-3 {
+        display: none;
+    }
+    .grade.hightsame .col-md-6 {
+        padding: 12vw 3vw;
+        text-align: center;
+    }
+    #footer .footer-socials {
+        float: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .row_margin {
+        text-align: center;
+    }
+    .iBow h2 {
+        font-size: 32px;
+    }
+    .iBow p {
+        padding: 0 10vw 2vw;
+    }
+    .iBow a {
+        margin-right: 0;
+        width: 100%;
+    }
+    .Characteristic p {
+        margin-bottom: 10vw;
+    }
+    .Characteristic img {
+        width: 32vw;
+    }
+    .grade h3 {
+        font-size: 6vw;
+        line-height: 1.4;
+    }
+    .grade.hightsame .col-md-6 {
+        padding: 12vw 0;
+    }
+}
+
+
+/*owl*/
+
+.owl-controls {
+    display: none;
+}
